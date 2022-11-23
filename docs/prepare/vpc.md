@@ -1,6 +1,5 @@
 # VPCの用意
-ハンズオンに使うCloud9用のVPCを作っていきます。
-
+ハンズオンに使うCloud9用のVPCを作っていきます。  
 デフォルトのVPCではCloud9用の[VPC要件](https://docs.aws.amazon.com/ja_jp/cloud9/latest/user-guide/vpc-settings.html)を満たさないため、要件を満たす設定で作成します。
 
 ## VPCを作成する　{#create_vpc}
@@ -13,7 +12,7 @@
 
 ![vpc_2](./img/vpc_2.png)
 
-- VPCの設定を以下のようにします
+- VPCの設定を以下のようにします。
 
 |項目|値|
 |--|--|
