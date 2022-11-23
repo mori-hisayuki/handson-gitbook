@@ -1,0 +1,6 @@
+{
+  // Markdownでは末尾空白2つで改行になるのでtrimを無効化
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
+  },
+}
