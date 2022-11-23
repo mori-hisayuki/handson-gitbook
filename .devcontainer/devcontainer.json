@@ -1,0 +1,19 @@
+{
+  "name": "Gitbook CLI on VSCode",
+  "dockerComposeFile": "./docker-compose.yml",
+  "service": "gitbook_cli_on_nodejs",
+  // workspaceを明示的に指定
+  "workspaceFolder": "/home/vscode/develop",
+  // remotecontainer内でのextension
+  "extensions": [
+    "vscodevim.vim",                          // Vim
+    "formulahendry.auto-rename-tag",          // Auto Rename Tag
+    "mhutchie.git-graph",                     // Git Graph
+    "pkief.material-icon-theme",              // Material Icon Thema
+    "vector-of-bool.gitflow",                 // gitflow
+    "oderwat.indent-rainbow",                 // indent-rainbow
+    "streetsidesoftware.code-spell-checker",  // Code Spell Checker
+    "EditorConfig.EditorConfig"               // EditorConfig for VS Code
+  ],
+  "remoteUser": "vscode"
+}

@@ -1,0 +1,25 @@
+version: "3.4"
+services:
+  gitbook_cli_on_nodejs:
+    container_name: $CONTAINER_NAME
+    # ホスト名を明示的に指定する
+    hostname: localhost
+    build:
+      context: .
+      dockerfile: ./ubuntu/Dockerfile
+      args:
+        USER_ID: 1000
+        USER_NAME: $USER_NAME
+        GROUP_ID: 1000
+        GROUP_NAME: $USER_NAME
+        WORK_DIR: develop
+    environment:
+      - TZ=JST-9
+    ports:
+      - 8000:8000
+    volumes:
+      # ソースコードとdevcontainerを一緒に管理する場合は明示的にマウント先を指定
+      - ..:$HOME_DIR/develop:cached
+      - ~/.ssh:$HOME_DIR/.ssh
+      - .extensions:$HOME_DIR/.vscode-server/extensions
+    command: sleep infinity
