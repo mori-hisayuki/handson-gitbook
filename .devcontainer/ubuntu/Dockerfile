@@ -72,14 +72,10 @@ RUN set -x \
 # install yarn
 RUN npm install -g yarn
 
-# install honkit-cli
-RUN set -x \
-    && yarn global add \
-    honkit
-
 USER ${USER_NAME}
 
 # create workingirectory
 RUN set -x \
     && mkdir /home/${USER_NAME}/${WORK_DIR}
+
 WORKDIR /home/${USER_NAME}/${WORK_DIR}
