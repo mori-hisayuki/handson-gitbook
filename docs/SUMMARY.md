@@ -4,12 +4,13 @@
 
 ---
 `
-## 環境構築
+## 準備
+- 環境構築
+  - [VPC](prepare/vpc.md)
+  - [Cloud9](prepare/cloud9.md)
+  - [CLI](prepare/cli.md)
 
-- [Cloud9](chapter-2/README.md)
-- [CLI](chapter-3/README.md)
-
-## ハンズオン
+## ハンズオン本編
 
 - [DynamoDBの構築]()
 - [AppSyncの設定]()
