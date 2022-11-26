@@ -6,9 +6,9 @@
 `
 ## 準備
 - 環境構築
-  - [VPC](prepare/vpc.md)
-  - [Cloud9](prepare/cloud9.md)
-  - [CLI](prepare/cli.md)
+  - [VPCの作成](prepare/vpc.md)
+  - [Cloud9の環境構築](prepare/cloud9.md)
+  - [CLIのインストール](prepare/cli.md)
 
 ## ハンズオン本編
 - ハンズオン準備

@@ -17,7 +17,8 @@ Need to install the following packages:
 Ok to proceed? (y) y
 ```
 
-`react-amplified`というプロジェクトが作成されます。    
+`react-amplified`というプロジェクトが作成されます。  
+
 ![handson_1](./img/handson_1.png)
 
 プロジェクトが作成されたのが確認できたらプロジェクトディレクトリ内に移動します。  
@@ -48,9 +49,14 @@ webpack compiled successfully
 
 Cloud9で動作しているReactProjectを確認します。  
 上部のメニューにある`Preview`を押し、`Preview Running Application`を選択します。  
+
 ![handson_2](./img/handson_2.png)
 
 このように右下に動作しているアプリケーションを確認できます。  
+
 ![handson_3](./img/handson_3.png)
+
+確認ができましたら、`Ctrl + C`で一旦止めておきます。  
+アプリケーションの動作確認はこのあとも使う機会があるので動かし方と止め方は覚えておいてください。  
 
 ここまでで今回使用するReactアプリケーションの準備は完了となります。  
