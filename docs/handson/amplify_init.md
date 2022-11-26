@@ -71,7 +71,7 @@ Deployed root stack reactamplified [ ======================================== ] 
 ? Help improve Amplify CLI by sharing non sensitive configurations on failures (y/N) ‣ 
 ```
 
-最後に`Help improve Amplify CLI by sharing non sensitive configurations on failures `とAmplifyCLIに何かあったときに情報共有をするか問われますが、デフォルトの*N*のままで進めます。  
+最後に`Help improve Amplify CLI by sharing non sensitive configurations on failures `とAmplifyCLIに何かあったときに情報共有をするか問われますが、デフォルトの*"N**のままで進めます。  
 
 ```shell
 ✔ Help improve Amplify CLI by sharing non sensitive configurations on failures (y/N) · no
@@ -93,3 +93,45 @@ Try "amplify add api" to create a backend API and then "amplify push" to deploy 
 ```
 
 これでAmplifyの初期設定は完了です。
+
+## Amplifyのライブラリインストール
+Amplifyをアプリケーションで使用する際に使うライブラリをnpmでインストールします。  
+**react-amplified**のディレクトリ内で以下のコマンドを実行してください。  
+
+```
+npm install aws-amplify
+```
+
+ライブラリのインストールが完了したら`src`ディレクトリ直下の**index.js**を開きます。  
+import文の直下に以下のコードを埋め込みます。  
+```javascript
+import { Amplify } from 'aws-amplify';
+import awsExports from './aws-exports';
+Amplify.configure(awsExports);
+```
+
+埋め込んだあとはこのようになります。
+
+```javascript:src/index.js
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+import { Amplify } from 'aws-amplify';
+import awsExports from './aws-exports';
+Amplify.configure(awsExports);
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
+```
+
+ここまででAmplifyライブラリのインストールとコードへの埋め込みが完了です。
