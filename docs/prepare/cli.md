@@ -93,7 +93,7 @@ Enter the access key of the newly created user:
 ```
 
 次にProfile名を聞かれますが、今回はハンズオンで使うだけなのでデフォルトのまま進めます。  
-特に入力せずEnterを押すと、**default**となりここまでの入力も完了となります。  
+特に入力せずEnterを押すと、**default**となります。　　
 ```
 Enter the access key of the newly created user:
 ? accessKeyId:  ********************
@@ -103,3 +103,5 @@ This would update/create the AWS Profile in your local machine
 
 Successfully set up the new user.
 ```
+
+ここまででCLIの準備は完了となります。  

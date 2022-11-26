@@ -11,12 +11,15 @@
   - [CLI](prepare/cli.md)
 
 ## ハンズオン本編
-
+- ハンズオン準備
+  - [ReactProjectの作成](handson/react_application.md)
+  - [Amplifyの初期設定](handson/amplify_init.md)
 - [DynamoDBの構築]()
 - [AppSyncの設定]()
-- [AppSyncの設定]()
 
-## リソース削除
-- [AppSyncの削除]()
-- [DynamoDBの削除]()
-- [Cloud9の削除](chapter-2/README.md)
+## 後片付け
+- リソース削除
+  - [AppSyncの削除]()
+  - [DynamoDBの削除]()
+  - [Cloud9の削除](chapter-2/README.md)
+  - [VPCの削除]
