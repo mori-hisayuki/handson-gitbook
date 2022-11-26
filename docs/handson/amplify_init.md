@@ -1,7 +1,7 @@
 # Amplifyの設定
 環境準備と使用するアプリケーションが準備できたので、Amplifyの準備をしていきます。  
 
-## 初期設定
+## Amplifyプロジェクトの初期化
 **react-amplified**のディレクトリ内で以下のコマンドを実行してください。  
 
 ```
@@ -92,7 +92,7 @@ Pro tip:
 Try "amplify add api" to create a backend API and then "amplify push" to deploy everything
 ```
 
-これでAmplifyの初期設定は完了です。
+これでAmplifyプロジェクトの初期設定は完了です。
 
 ## Amplifyのライブラリインストール
 Amplifyをアプリケーションで使用する際に使うライブラリをnpmでインストールします。  

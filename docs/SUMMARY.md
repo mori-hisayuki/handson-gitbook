@@ -12,9 +12,9 @@
 
 ## ハンズオン本編
 - ハンズオン準備
-  - [ReactProjectの作成](handson/react_application.md)
-  - [Amplifyの初期設定](handson/amplify_init.md)
-- [DynamoDBの構築]()
+  - [Reactアプリケーションの作成](handson/react_application.md)
+  - [Amplifyプロジェクトの初期設定](handson/amplify_init.md)
+- [APIの追加](handson/api.md)
 - [AppSyncの設定]()
 
 ## 後片付け
