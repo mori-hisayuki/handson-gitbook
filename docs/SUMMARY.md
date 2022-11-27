@@ -16,6 +16,7 @@
   - [Amplifyプロジェクトの初期設定](handson/amplify_init.md)
 - [APIの追加](handson/api.md)
 - [ClientからAPI呼び出し](handson/client.md)
+- [作成したアプリケーションのホスティング](handson/hosting.md)
 
 ## 後片付け
 - リソース削除
