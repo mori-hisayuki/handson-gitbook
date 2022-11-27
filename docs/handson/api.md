@@ -115,7 +115,7 @@ Deployed api reactamplified [ ======================================== ] 6/6
 
 
 GraphQL endpoint: https://q4eq2xymvncejcpplpws5gktmq.appsync-api.ap-northeast-1.amazonaws.com/graphql
-GraphQL API KEY: da2-qg3cancywvakhmggtf6q3a4txi
+GraphQL API KEY: *****************************
 
 GraphQL transformer version: 2
 

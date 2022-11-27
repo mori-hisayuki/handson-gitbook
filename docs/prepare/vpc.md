@@ -2,7 +2,7 @@
 ハンズオンに使うCloud9用のVPCを作っていきます。  
 デフォルトのVPCではCloud9用の[VPC要件](https://docs.aws.amazon.com/ja_jp/cloud9/latest/user-guide/vpc-settings.html)を満たさないため、要件を満たす設定で作成します。
 
-## VPCを作成する　{#create_vpc}
+## VPCを作成する　
 - AWSのマネジメントコンソールを開き、**東京リージョン**であることを確認します。
 - 検索バーに`vpc`と入力すると、サービス欄にCloud9が表示されるので選択します。
 
