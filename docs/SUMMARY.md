@@ -15,7 +15,7 @@
   - [Reactアプリケーションの作成](handson/react_application.md)
   - [Amplifyプロジェクトの初期設定](handson/amplify_init.md)
 - [APIの追加](handson/api.md)
-- [AppSyncの設定]()
+- [ClientからAPI呼び出し](handson/client.md)
 
 ## 後片付け
 - リソース削除
