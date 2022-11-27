@@ -79,7 +79,7 @@ amplify publish
 ```
 
 リソースの更新や足りないリソースの作成などを行われます。  
-最後に**Deployment complete!**と表示されたらホスティングが完了となります。  
+最後に**Deployment complete**表示されたらホスティングが完了となります。  
 
 ```
 Deployment completed.

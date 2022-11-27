@@ -20,7 +20,5 @@
 
 ## 後片付け
 - リソース削除
-  - [AppSyncの削除]()
-  - [DynamoDBの削除]()
+  - [Amplifyの削除](cleaning/delete_amplify.md)
   - [Cloud9の削除](chapter-2/README.md)
-  - [VPCの削除]
