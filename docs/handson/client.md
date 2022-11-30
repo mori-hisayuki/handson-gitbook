@@ -3,7 +3,7 @@ APIの準備ができたのでReactアプリケーションからAPIを通して
 
 ## Todoアプリケーションの作成
 準備で作成したReactアプリケーションをTodoアプリケーションにしていきます。  
-まず、 **src/App.js**を開いて以下のコードを上書きします。  
+まず、 **/react-amplified/src/App.js**を開いて以下のコードを上書きします。  
 
 ```javascript
 import React, { useEffect, useState } from 'react'
@@ -26,17 +26,25 @@ const App = () => {
 
   const setInput = (key, value) => setFormState({ ...formState, [key]: value })
   
-  const fetchTodos = async() => {
+  /**
+   * ToDoの一覧を取得するFunction
+   **/
+  const fetchTodos = async () => {
+    // インストールしたAmplifyライブラリからAPI.graphqlを使って`listTodos`のGraphQLを実行している
     const todoData = await API.graphql(graphqlOperation(listTodos)).catch(_ => console.log('error fetching todos'))
     const todos = todoData.data.listTodos.items
     setTodos(todos)
   }
 
+  /**
+   * ToDoを追加するFunction
+   **/
   const addTodo = async () => {
     if(formState.name && formState.description) {
       const todo = { ...formState }
       setTodos([...todos, todo])
       setFormState(initialState)
+      // インストールしたAmplifyライブラリからAPI.graphqlを使って`createTodo`のGraphQLを実行している
       await API.graphql(graphqlOperation(createTodo, {input: todo})).catch(err => console.log('error creating todo:', err))
     }
   }
@@ -81,7 +89,13 @@ const styles = {
 export default App
 ```
 
-**src/App.js**を上記のコードに書き換えたら、Reactアプリケーションの動作確認したとき同様に**Preview**から動作確認をします。  
+**src/App.js**を上記のコードに書き換えたら、以下のコマンドからアプリケーションを動かします。
+
+```
+cd ~/environment/react-amplified; npm start
+```
+
+Reactアプリケーションの動作確認したとき同様に**Preview**から動作確認をします。  
 
 ![handson_4](./img/handson_4.png)
 
