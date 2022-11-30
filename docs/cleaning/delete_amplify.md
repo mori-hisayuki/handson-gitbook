@@ -20,7 +20,7 @@ Deleting env: dev.
 ✅ Project deleted locally.
 ```
 
-**Project deleted locally.**と削除完了メッセージが表示されたら実際に削除がされているか確認します。  
+**Project deleted locally**と削除完了メッセージが表示されたら実際に削除がされているか確認します。  
 今回削除対象になったリソースは**DynamoDBのテーブル**と**AppSyncのGraphQL API**になります。  
 
 ### DynamoDB
@@ -47,3 +47,23 @@ APIがない場合は以下の画面が表示されるので、以下の画面�
 
 
 ここまででAmplifyが管理しているリソースの削除は完了です。
+
+## IAMユーザーの削除
+AmplifyCLIで利用したのですが、Amplifyの管轄外なのでIAMユーザーは手動で消す必要があります。  
+
+AWSのマネジメントコンソールを開き、**東京リージョン**であることを確認します。  
+検索バーに**iam**と入力すると、サービス欄にIAMが表示されるので選択します。  
+
+![IAMを検索](./img/search_iam.png)
+
+今回のハンズオンで使用した**amplify-hanson**を選択し、`削除`ボタンを押します。
+
+![IAMユーザーを選択](./img/select_iam_user.png)
+
+確認画面が表示されるので、テキストボックスに**amplify-hanson**と入力して`削除`ボタンを押します。
+
+![IAMユーザーを削除](./img/delete_iam_user.png)
+
+以下の画面が表示されたらIAMユーザーの削除は完了です。
+
+![削除完了](./img/delete_completu_iam_user.png)
