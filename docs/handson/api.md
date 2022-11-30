@@ -3,10 +3,10 @@ Reactのアプリケーションを作成し、新しいAmplifyプロジェク�
 
 ## APIの追加
 GraphQLのAPIを追加します。  
-**react-amplified**のディレクトリ内で以下のコマンドを実行してください。  
+以下のコマンドをCloud9のターミナルで実行してください。  
 
 ```
-amplify add api
+cd ~/environment/react-amplified; amplify add api
 ```
 
 REST APIまたはGraphQLかを問われるので、今回のハンズオンでは**GraphQL**を選択します。  
@@ -25,7 +25,7 @@ REST APIまたはGraphQLかを問われるので、今回のハンズオンで�
 ❯ Continue 
 ```
 
-テンプレートになるスキーマを選択できるので、**Single object with fields (e.g., “Todo” with ID, name, description)**を選択します。  
+テンプレートになるスキーマを選択できるので、`Single object with fields (e.g., “Todo” with ID, name, description)`を選択します。  
 ```
 ? Choose a schema template: (Use arrow keys)
 ❯ Single object with fields (e.g., “Todo” with ID, name, description) 
@@ -49,7 +49,7 @@ Edit your schema at /home/ec2-user/environment/react-amplified/amplify/backend/a
 ? Do you want to edit the schema now? (Y/n) ‣ 
 ```
 
-閉じたあと、`/react-amplified/amplify/backend/api/reactamplified/schema.graphql`にあるschemaファイルを開きます。
+閉じたあと、**/react-amplified/amplify/backend/api/reactamplified/schema.graphql**にあるschemaファイルが出来ていることを確認します。  
 
 ```schema.graphql
 type Todo @model {
@@ -59,12 +59,14 @@ type Todo @model {
 }
 ```
 
+直接利用することはありませんが、このスキーマファイルをもとに**AppSync**にAPIが作成されます。  
+
 
 ## APIのデプロイ
 作成したスキーマをデプロイするには以下のコマンドを実行します。
 
 ```
-amplify push
+cd ~/environment/react-amplified; amplify push
 ```
 
 その後に何度か質問があるのでそれぞれ答えていきます。  
@@ -121,7 +123,8 @@ GraphQL transformer version: 2
 
 ```
 
-デプロイが完了すると`src`直下に`graphql`というディレクトリが出来ていて、 その中にQueriesやMutationsといったGraphQL用のファイルが出来ています。  
-この段階で**AppSync**と**DynamoDB**にもリソースが出来上がっているので、Serverサイドとして使えるようになってます。  
+デプロイが完了すると**src**ディレクトリ直下に**graphql**というディレクトリが出来ます。  
+その中にQueriesやMutationsといったGraphQL用のファイルが出来ています。  
+この段階で**AppSync**と**DynamoDB**にもリソースが出来上がっているので、APIとして使えるようになってます。  
 
 ここまででAPI Serverとしての部分は完了になります。

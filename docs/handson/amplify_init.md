@@ -2,7 +2,7 @@
 環境準備と使用するアプリケーションが準備できたので、Amplifyの準備をしていきます。  
 
 ## Amplifyプロジェクトの初期化
-**react-amplified**のディレクトリ内で以下のコマンドを実行してください。  
+以下のコマンドをCloud9のターミナルで実行してください。  
 
 ```
 cd ~/environment/react-amplified; amplify init
@@ -96,7 +96,7 @@ Try "amplify add api" to create a backend API and then "amplify push" to deploy 
 
 ## Amplifyのライブラリインストール
 Amplifyをアプリケーションで使用する際に使うライブラリをnpmでインストールします。  
-**react-amplified**のディレクトリ内で以下のコマンドを実行してください。  
+以下のコマンドをCloud9のターミナルで実行してください。  
 
 ```
 cd ~/environment/react-amplified; npm install aws-amplify
