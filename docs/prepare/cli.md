@@ -68,19 +68,24 @@ https://console.aws.amazon.com/iam/home?region=ap-northeast-1#/users$new?step=fi
 ```
 
 IAMユーザーを作成する画面に遷移するので、そのまま`次のステップ:アクセス権限`を押します。  
+
 ![cli_1](./img/cli_1.png)
 
 ポリシーについても**AdministratorAccess-Amplify**が付与されていることを確認して、`次のステップ：タグ`を押します。  
+
 ![cli_2](./img/cli_2.png)
 
 タグは特に指定しないのでそのまま`次のステップ：確認`を押します。  
+
 ![cli_3](./img/cli_3.png)
 
 ユーザー名が**amplify-hanson**であることと、管理ポリシーに**AdministratorAccess-Amplify**があることを確認したら`ユーザーの作成`で先に進みます。  
+
 ![cli_4](./img/cli_4.png)
 
 IAMユーザーが作成されたら**アクセスキー ID**と**シークレットアクセスキー**を控えておきます。  
 CSVをダウンロードしておくのが良いです。  
+
 ![cli_5](./img/cli_5.png)
 
 Cloud9に戻りEnterを押します。  

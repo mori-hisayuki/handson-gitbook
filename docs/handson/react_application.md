@@ -10,7 +10,7 @@ Cloud9のターミナルで以下のコマンドを実行してください。
 npx create-react-app react-amplified
 ```
 
-`Need to install the following packages`と質問されるので、`y`と入力します。  
+**Need to install the following packages**と質問されるので、`y`と入力します。  
 ```
 Need to install the following packages:
   create-react-app@5.0.1
@@ -32,7 +32,7 @@ cd react-amplified
 npm start
 ```
 
-**Compiled successfully!**と表示されたらアプリケーションが正常に動作しています。  
+**Compiled successfully**と表示されたらアプリケーションが正常に動作しています。  
 ```
 Compiled successfully!
 
