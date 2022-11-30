@@ -5,11 +5,11 @@
 **react-amplified**のディレクトリ内で以下のコマンドを実行してください。  
 
 ```
-amplify init
+cd ~/environment/react-amplified; amplify init
 ```
 
 `Enter a name for the project (reactamplified)`と問われるのですが、**入力値はなし**でそのままEnterを押します。  
-プロジェクト名には`reactamplified`のデフォルトが表示され、以下のようにAmplifyの設定が表示されます。
+プロジェクト名には**reactamplified**のデフォルトが表示され、以下のようにAmplifyの設定が表示されます。
 `Initialize the project with the above configuration? `とこの設定のまますすめるかを問われるので `y` で進めていきます。  
 
 ```shell
@@ -71,7 +71,7 @@ Deployed root stack reactamplified [ ======================================== ] 
 ? Help improve Amplify CLI by sharing non sensitive configurations on failures (y/N) ‣ 
 ```
 
-最後に`Help improve Amplify CLI by sharing non sensitive configurations on failures `とAmplifyCLIに何かあったときに情報共有をするか問われますが、デフォルトの*"N**のままで進めます。  
+最後に`Help improve Amplify CLI by sharing non sensitive configurations on failures `とAmplifyCLIに何かあったときに情報共有をするか問われますが、デフォルトの**N**のままで進めます。  
 
 ```shell
 ✔ Help improve Amplify CLI by sharing non sensitive configurations on failures (y/N) · no
@@ -99,10 +99,13 @@ Amplifyをアプリケーションで使用する際に使うライブラリをn
 **react-amplified**のディレクトリ内で以下のコマンドを実行してください。  
 
 ```
-npm install aws-amplify
+cd ~/environment/react-amplified; npm install aws-amplify
 ```
 
 ライブラリのインストールが完了したら`src`ディレクトリ直下の**index.js**を開きます。  
+
+![/react-amplified/src/index.js](./img/indexjs.png)
+
 import文の直下に以下のコードを埋め込みます。  
 ```javascript
 import { Amplify } from 'aws-amplify';
@@ -112,7 +115,7 @@ Amplify.configure(awsExports);
 
 埋め込んだあとはこのようになります。
 
-```javascript:src/index.js
+```javascript
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
@@ -133,5 +136,7 @@ root.render(
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
 ```
+
+埋め込んだあとは**Ctrl+S**で保存します。  
 
 ここまででAmplifyライブラリのインストールとコードへの埋め込みが完了です。
