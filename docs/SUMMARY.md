@@ -19,6 +19,7 @@
 - [作成したアプリケーションのホスティング](handson/hosting.md)
 
 ## 後片付け
-- リソース削除
+- 各リソース削除
   - [Amplifyの削除](cleaning/delete_amplify.md)
   - [Cloud9の削除](cleaning/delete_cloud9.md)
+  - [VPCの削除](cleaning/delete_vpc.md)
