@@ -19,7 +19,7 @@ EC2のインスタンスタイプは**t3.small**を選択します。残りの**
 
 ![cloud9_4](./img/cloud9_4.png)
 
-Networkについては**Connection**は**AWS Systems Manager (SSM)**になっていればそのままでよいです。**VPC settings**は[さきほど作成したVPC](vpc.md)とSubnetを明示的に選択するようにします。  
+Networkについては**Connection**は**AWS Systems Manager**になっていればそのままでよいです。**VPC settings**は[さきほど作成したVPC](vpc.md)とSubnetを明示的に選択するようにします。  
 
 ![cloud9_5](./img/cloud9_5.png)
 
@@ -28,7 +28,7 @@ Networkについては**Connection**は**AWS Systems Manager (SSM)**になって
 ![cloud9_6](./img/cloud9_6.png)
 
 完了すると以下のような画面が表示されます。  
-**Open**を押すとCloud9が開くようになります。  
+`Open`を押すとCloud9が開くようになります。  
 
 ![作成完了](./img/cloud9_6_1.png)
 ![Cloud9画面](./img/cloud9_6_2.png)
@@ -94,7 +94,7 @@ EBS一覧の中で指定したボリュームIDを選択し、`アクション`�
 
 ![cloud9_18](./img/cloud9_18.png)
 
-サイズを`32`に変更して`変更`ボタンを押します。
+サイズを**32**に変更して`変更`ボタンを押します。
 
 ![cloud9_19](./img/cloud9_19.png)
 

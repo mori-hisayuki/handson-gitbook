@@ -2,9 +2,9 @@
 ここまでで作成したTodoアプリケーションを実際にWeb上に公開するためにホスティングをします。  
 
 ## アプリケーションをHostingの設定に追加する
-**react-amplified**のディレクトリ内で以下のコマンドを実行してください。  
+以下のコマンドをCloud9のターミナルで実行してください。  
 ```
-amplify add hosting
+cd ~/environment/react-amplified; amplify add hosting
 ```
 
 どのサービスを利用してホスティングするかを問われるので**Hosting with Amplify Console**を選択します。  
@@ -57,9 +57,9 @@ API以外にHostingが追加されていることがわかります。
 
 ## アプリケーションのPublishを行う
 amplifyに対してHosting設定を追加したので、次は実際にWeb上に公開します。  
-**react-amplified**のディレクトリ内で以下のコマンドを実行してください。  
+以下のコマンドをCloud9のターミナルで実行してください。  
 ```
-amplify publish
+cd ~/environment/react-amplified; amplify publish
 ```
 
 リソースに特に問題がなければ**y**で先に進みます。

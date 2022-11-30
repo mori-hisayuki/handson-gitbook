@@ -8,9 +8,9 @@
 cd ~/environment/react-amplified; amplify init
 ```
 
-`Enter a name for the project (reactamplified)`と問われるのですが、**入力値はなし**でそのままEnterを押します。  
+**Enter a name for the project**と問われるのですが、**入力値はなし**でそのままEnterを押します。  
 プロジェクト名には**reactamplified**のデフォルトが表示され、以下のようにAmplifyの設定が表示されます。
-`Initialize the project with the above configuration? `とこの設定のまますすめるかを問われるので `y` で進めていきます。  
+**Initialize the project with the above configuration?**とこの設定のまますすめるかを問われるので**y**で進めていきます。  
 
 ```shell
 $ amplify init
@@ -71,7 +71,7 @@ Deployed root stack reactamplified [ ======================================== ] 
 ? Help improve Amplify CLI by sharing non sensitive configurations on failures (y/N) ‣ 
 ```
 
-最後に`Help improve Amplify CLI by sharing non sensitive configurations on failures `とAmplifyCLIに何かあったときに情報共有をするか問われますが、デフォルトの**N**のままで進めます。  
+最後に**Help improve Amplify CLI by sharing non sensitive configurations on failures**とAmplifyCLIに何かあったときに情報共有をするか問われますが、デフォルトの**N**のままで進めます。  
 
 ```shell
 ✔ Help improve Amplify CLI by sharing non sensitive configurations on failures (y/N) · no

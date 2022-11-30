@@ -17,7 +17,7 @@ Need to install the following packages:
 Ok to proceed? (y) y
 ```
 
-`react-amplified`というプロジェクトが作成されます。  
+**react-amplified**というプロジェクトが作成されます。  
 
 ![handson_1](./img/handson_1.png)
 
@@ -32,7 +32,7 @@ cd react-amplified
 npm start
 ```
 
-`Compiled successfully!`と表示されたらアプリケーションが正常に動作しています。  
+**Compiled successfully!**と表示されたらアプリケーションが正常に動作しています。  
 ```
 Compiled successfully!
 
@@ -56,7 +56,7 @@ Cloud9で動作しているReactProjectを確認します。
 
 ![handson_3](./img/handson_3.png)
 
-確認ができましたら、`Ctrl + C`で一旦止めておきます。  
-アプリケーションの動作確認はこのあとも使う機会があるので動かし方と止め方は覚えておいてください。  
+確認ができましたら、**Ctrl + C**で一旦止めておきます。  
+アプリケーションの動作確認はこのあとも使う機会があるので、動かし方と止め方は覚えておいてください。  
 
 ここまでで今回使用するReactアプリケーションの準備は完了となります。  
