@@ -11,7 +11,7 @@ AWSのマネジメントコンソールを開き、**東京リージョン**で�
 
 ![cloud9_2](./img/cloud9_2.png)
 
-Cloud9の環境構築をしていきます。まず`Details`項目の`Name`には **hans-on** と入力します。残りの**Description**と **Environment type**についてはそのままでよいです。  
+Cloud9の環境構築をしていきます。まず**Details**の**Name**には **hans-on** と入力します。残りの**Description**と **Environment type**についてはそのままでよいです。  
 
 ![cloud9_3](./img/cloud9_3.png)
 
@@ -27,7 +27,11 @@ Networkについては**Connection**は**AWS Systems Manager (SSM)**になって
 
 ![cloud9_6](./img/cloud9_6.png)
 
+完了すると以下のような画面が表示されます。  
+**Open**を押すとCloud9が開くようになります。  
 
+![作成中](./img/cloud9_6_1.png)
+![Cloud9画面](./img/cloud9_6_2.png)
 
 
 ## クレデンシャル無効化
