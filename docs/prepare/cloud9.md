@@ -30,7 +30,7 @@ Networkについては**Connection**は**AWS Systems Manager (SSM)**になって
 完了すると以下のような画面が表示されます。  
 **Open**を押すとCloud9が開くようになります。  
 
-![作成中](./img/cloud9_6_1.png)
+![作成完了](./img/cloud9_6_1.png)
 ![Cloud9画面](./img/cloud9_6_2.png)
 
 
@@ -39,15 +39,15 @@ Cloud9を開いたときに発行される一時認証情報が発行されま�
 
 Cloud9ボタンを押し、`Preference`を選択します。  
 
-![cloud9_7](./img/cloud9_7.png)
+![Preferenceを選択](./img/cloud9_7.png)
 
 **AWS Setting**を選択します。  
 
-![cloud9_8](./img/cloud9_8.png)
+![AWS Settingを選択](./img/cloud9_8.png)
 
 **AWS managed temporary credentials**をオフにします
 
-![cloud9_9](./img/cloud9_9.png)
+![AWS managed temporary credentialsをオフ](./img/cloud9_9.png)
 
 
 
@@ -102,8 +102,10 @@ EBS一覧の中で指定したボリュームIDを選択し、`アクション`�
 
 ![cloud9_20](./img/cloud9_20.png)
 
+ボリューム変更したら再度Cloud9に戻ります。  
+このとき停止したEC2インスタンスの再起動はCloud9を開いたときに自動で起動するので特にしなくても大丈夫です。  
 
-再度Cloud9に戻り、ボリュームのsizeが増えている事が確認できたらEBSの設定は完了です。
+Cloud9のターミナルでボリュームのsizeが増えている事が確認できたらEBSの設定は完了です。
 
 ```
 df -h
